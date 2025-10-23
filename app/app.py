@@ -8,7 +8,7 @@ import yaml
 st.set_page_config(page_title="Employee Churn Predictor", layout="wide")
 st.title("🏢 Employee Churn Predictor")
 
-with open("/Users/murad/ml-cicd-streamlit/ml-cicd-streamlit/configs/config.yml") as f:
+with open("configs/config.yml") as f:
     cfg = yaml.safe_load(f)
 
 model_path = cfg["model"]["path"]

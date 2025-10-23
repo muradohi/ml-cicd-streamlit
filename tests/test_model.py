@@ -4,7 +4,7 @@ import pytest
 
 def test_model_training():
     X_train, X_test, y_train, y_test, num_feat, cat_feat = load_data(
-        '/Users/murad/ml-cicd-streamlit/ml-cicd-streamlit/configs/config.yml'
+        'configs/config.yml'
     )
 
     best_params, best_score, best_model, y_pred, accuracy, confusion_matrix = train_eval(
