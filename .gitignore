@@ -16,9 +16,9 @@ env/
 .DS_Store
 
 # Artifacts & models
-artifacts/
-*.pkl
-*.joblib
+# artifacts/
+# *.pkl
+# *.joblib
 
 # Build / dist
 build/
