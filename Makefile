@@ -1,10 +1,10 @@
 .PHONY: install test train run
 
 install:
-	pip install -r requirements.txt
+	pip install -r requirments.txt
 
 test:
-	pytest -q
+	PYTHONPATH=. pytest -q
 
 train:
 	python src/train.py

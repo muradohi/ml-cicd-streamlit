@@ -8,10 +8,12 @@ import yaml
 st.set_page_config(page_title="Employee Churn Predictor", layout="wide")
 st.title("🏢 Employee Churn Predictor")
 
-cfg = yaml.safe_load(open("configs/config.yaml"))
-model_path = Path(cfg["artifacts_dir"]) / cfg["model_filename"]
+with open("/Users/murad/ml-cicd-streamlit/ml-cicd-streamlit/configs/config.yml") as f:
+    cfg = yaml.safe_load(f)
 
-if not model_path.exists():
+model_path = cfg["model"]["path"]
+
+if not model_path:
     st.error("⚠️ Model not found. Please train it first.")
     st.stop()
 

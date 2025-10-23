@@ -76,7 +76,7 @@ def train_eval(X_train, y_train, X_test, y_test, num_feat, cat_feat):
     accuracy = accuracy_score(y_test, y_pred)
     confusion_matrix = ConfusionMatrixDisplay.from_predictions(y_test, y_pred)
     print(f"Test Accuracy: {accuracy}")
-    confusion_matrix.plot()
+    # confusion_matrix.plot()
 
     return best_params, best_score, best_model, y_pred, accuracy, confusion_matrix
 

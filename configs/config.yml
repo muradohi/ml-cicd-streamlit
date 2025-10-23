@@ -4,6 +4,14 @@ data:
   csv_path: "/Users/murad/ml-cicd-streamlit/ml-cicd-streamlit/data/churn.csv"
   test_size: 0.2
   random_state: 42
+# Select numeric and categorical features
+numeric_features:
+  ["Age", "Tenure", "Salary", "Performance_Rating", "Projects_Completed",
+   "Training_Hours", "Promotions", "Overtime_Hours", "Satisfaction_Level",
+   "Average_Monthly_Hours Worked", "Absenteeism", "Distance_from_Home", "Manager_Feedback_Score"]
+
+categorical_features:
+  ["Gender", "Education_Level", "Marital_Status", "Job_Role", "Department", "Work_Location", "Work-Life_Balance"]
 
 model:
   param_grid:
