@@ -1,0 +1,15 @@
+#
+
+data: 
+  csv_path: "/Users/murad/ml-cicd-streamlit/ml-cicd-streamlit/data/churn.csv"
+  test_size: 0.2
+  random_state: 42
+
+model:
+  param_grid:
+    c: [0.001, 0.01, 0.1, 1, 10]
+    penalty: ['l1', 'l2']
+    solver: ['liblinear', 'saga']
+  cv_folds: 5
+  scoring: 'accuracy'
+  path: /Users/murad/ml-cicd-streamlit/ml-cicd-streamlit/artifacts/best_model.pkl
