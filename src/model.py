@@ -13,7 +13,7 @@ import os
 import pandas as pd
 from joblib import load
 
-config_path = '/Users/murad/ml-cicd-streamlit/ml-cicd-streamlit/configs/config.yml'
+config_path = 'configs/config.yml'
 def model_pipeline(num_feat, cat_feat):
     num_pipeline = Pipeline(
         [('simple_imputer', SimpleImputer(strategy='median')),

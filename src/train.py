@@ -1,7 +1,7 @@
 import yaml
 from data import load_data
 from model import build_model, train_eval, save_model, load_model, model_pipeline
-config_path = '/Users/murad/ml-cicd-streamlit/ml-cicd-streamlit/configs/config.yml'
+config_path = 'configs/config.yml'
 def main():
     with open(config_path, 'r') as f:
         config = yaml.safe_load(f)

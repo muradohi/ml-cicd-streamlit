@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import yaml
 
-config_path = '/Users/murad/ml-cicd-streamlit/ml-cicd-streamlit/configs/config.yml'
+config_path = 'configs/config.yml'
 def load_data(config_path):
     with open(config_path, 'r') as f:
         config = yaml.safe_load(f)
