@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+*.swp
+.env
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.DS_Store
+
+# Artifacts & models
+artifacts/
+*.pkl
+*.joblib
+
+# Build / dist
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Tests / coverage
+pytest_cache/
+.tox/
+.coverage
+coverage.xml
+htmlcov/
+
+# Streamlit & cache
+.streamlit/
+.cache/
+
+# Data (keep our sample CSV tracked)
+data/*
+!data/churn.csv
